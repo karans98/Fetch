@@ -1,0 +1,7 @@
+torch
+pandas
+transformers
+regex
+sklearn-pandas
+nltk
+flask
