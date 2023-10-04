@@ -15,7 +15,7 @@ To address this problem we can build a Flask-based web application that leverage
 
 ### Steps involved - 
 
-1. Load the 3 csv files as Pandas DataFrames and create a list of relevant categories, brands, and retailers
+1. Load the 3 csv files as Pandas DataFrames and create a list of relevant categories, brands, and retailers. 
 2. Define a custom text pre-processing function that removes any character that is not a space or word
 3. Load the pre-trained BERT model (bert-base-uncased) and tokenizer from the Hugging Face Transformers library.
 4. Define a function to create embeddings for each class
@@ -25,6 +25,12 @@ To address this problem we can build a Flask-based web application that leverage
 8. Create a Flask web application rendering an HTML template. The application can be run locally using the app.run() method, making it accessible through a web browser.
 
 Hence, once the user searches by category/retailer/brand, the list of relevant offers is populated.
+
+### Additional Points
+- In a production pipeline, especially with large datasets, we can use a database management system (e.g., SQL database) for efficient querying and indexing. We can implement rigorous testing and use version control to track and facilitate collaboration. We can plan for horizontal scaling to handle increased traffic.
+
+- For receipt classification or entity recognition, since the BERT model is already present in the pipeline we can fine-tune the BERT model for text classification or Named Entity Recognition (NER). 
+
 
 ## How to run - 
 
