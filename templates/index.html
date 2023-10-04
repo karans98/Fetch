@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <center><img src="https://mma.prnewswire.com/media/1309683/Fetch_Rewards_Logo.jpg?p=facebook" alt="Fetch_Rewards_Logo" width="300" height="150">
+
+    <h1>Welcome to Fetch Rewards</h1>
+    <br>
+    <br>
+  
+    <h3><form method="POST" action="/currentoffers">
+        <label for="user_input">What are you looking for today?</label>
+        <input type="text" name="user_input" id="user_input">
+        <input type="submit" value="Submit">
+    </form></h3></center>
+
+    {% if show_line %}
+    <div style="padding-left: 100px;">
+        <h3>The input {{ user_input }} has a simlilarity score of {{score}} with {{ cat }}</h3>
+        <h3>Offers:</h3>
+        <ul>
+            {% for item in output %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+  
+</body>
+</html>
