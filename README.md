@@ -28,7 +28,8 @@ Hence, once the user searches by category/retailer/brand, the list of relevant o
 
 ## How to run - 
 
-1. Clone this repository :git clone https://github.com/karans98/Fetch.git
-2. Install the Python libraries mentioned in the requirements.txt file :pip install -r requirements.txt
-3. Run the Python file :python FetchApp.py
-4. Click the link and query for related offers
+1. Clone this repository :[git clone https://github.com/karans98/Fetch.git]
+2. Once cloning is complete, navigate to the cloned repository :[cd Fetch]
+3. Install the Python libraries mentioned in the requirements.txt file :[pip install -r requirements.txt]
+4. Run the Python file :[python FetchApp.py]
+5. Click the link and query for related offers
